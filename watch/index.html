@@ -3,7 +3,7 @@
 <meta name="robots" content="noindex,nofollow">
 <title>Stop Chasing Truckers · atLocal Media</title>
 <meta property="og:title" content="Stop Chasing Truckers · atLocal Media"><meta property="og:description" content="Prepared for Kyle Duty, Resolute Insurance Group. A 16 minute video walkthrough.">
-<meta property="og:image" content="https://cdn.loom.com/sessions/thumbnails/a6107f06039b4e62a9452aa654e72d72-969ca914d039c912.jpg">
+<meta property="og:image" content="https://jataylor3416.github.io/resolute-leads/watch/poster.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;800&display=swap" rel="stylesheet">
 <style>
@@ -19,8 +19,12 @@ main{flex:1;width:100%;max-width:1180px;margin:0 auto;padding:clamp(8px,2vw,24px
 h1{font-weight:800;font-size:clamp(28px,4.6vw,54px);line-height:1.05;letter-spacing:-.02em;margin-bottom:12px}
 h1 em{font-style:normal;color:var(--coral)}
 .prep{font-weight:500;font-size:clamp(14px,1.6vw,18px);opacity:.85;margin-bottom:clamp(18px,3vw,30px)}
-.vid{position:relative;width:100%;aspect-ratio:16/9;border-radius:clamp(12px,1.6vw,20px);overflow:hidden;background:#000;box-shadow:0 30px 80px rgba(0,0,0,.45);border:3px solid rgba(255,255,255,.08)}
-.vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vid{position:relative;width:100%;aspect-ratio:1668/1078;border-radius:clamp(12px,1.6vw,20px);overflow:hidden;background:#000;box-shadow:0 30px 80px rgba(0,0,0,.45);border:3px solid rgba(255,255,255,.08)}
+.vid video{position:absolute;inset:0;width:100%;height:100%;display:block;background:#000;object-fit:contain}
+.play{position:absolute;inset:0;margin:auto;width:clamp(72px,10vw,112px);height:clamp(72px,10vw,112px);border-radius:50%;border:0;background:var(--ruby);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 40px rgba(0,0,0,.45);transition:transform .2s,background .2s}
+.play:hover{transform:scale(1.06);background:var(--coral)}
+.play svg{width:38%;height:38%;margin-left:8%}
+.vid.on .play{display:none}
 .meta{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;margin-top:18px;font-weight:600;font-size:clamp(13px,1.4vw,16px)}
 .meta .len{color:var(--coral)}
 footer{padding:20px clamp(16px,4vw,48px) 28px;font-size:13px;font-weight:500;opacity:.7;text-align:center}
@@ -32,8 +36,9 @@ footer a{color:inherit}
   <div class="k">A social lead generation plan for Resolute Insurance Group</div>
   <h1>Stop chasing truckers. <em>Let them call you.</em></h1>
   <p class="prep">Prepared for Kyle Duty, Resolute Insurance Group &nbsp;·&nbsp; November 2026</p>
-  <div class="vid"><iframe src="https://www.loom.com/embed/a6107f06039b4e62a9452aa654e72d72?hide_owner=true&amp;hide_share=true&amp;hide_title=true&amp;hideEmbedTopBar=true&amp;hide_speed=true" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Stop Chasing Truckers"></iframe></div>
+  <div class="vid" id="vid"><video id="v" preload="metadata" playsinline poster="poster.jpg" src="presentation.mp4" title="Stop Chasing Truckers"></video><button class="play" id="pb" type="button" aria-label="Play the presentation"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l15 8-15 8z"/></svg></button></div>
   <div class="meta"><span>Press play to start. Jamie walks you through the full plan.</span><span class="len">16 min</span></div>
 </main>
 <footer>Jamie Taylor &nbsp;·&nbsp; atLocal Media &nbsp;·&nbsp; 501-516-6312 &nbsp;·&nbsp; <a href="https://www.atlocalmedia.com">atlocalmedia.com</a></footer>
+<script>(function(){var v=document.getElementById("v"),w=document.getElementById("vid"),b=document.getElementById("pb");b.addEventListener("click",function(){v.controls=true;w.classList.add("on");v.play();});v.addEventListener("play",function(){v.controls=true;w.classList.add("on");});})();</script>
 </body></html>
